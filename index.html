@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Order page</title>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" type="img/png" href="/img/cart.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<section class="container">
+  <h1>Оформлення замовлення</h1>
+
+  <h2>Продукти</h2>
+  <section id="section-table"></section>
+
+  <section id="form-container">
+    <form class="form-horizontal" role="form" name="checkout" method="post" id="form">
+
+      <section class="section-buyer">
+        <h2>Дані покупця</h2>
+
+        <section class="form-group">
+          <label class="field-label">Ваше ім’я *</label>
+          <input type="text" name="user-name" id="user-name" value="" class="form-control" placeholder="Ваше ім’я">
+          <span class="span-form-check"></span>
+        </section>
+
+        <section class="form-group">
+          <label class="field-label">Телефон *</label>
+          <input type="tel" name="phone" id="phone" value="" class="form-control" placeholder="(000)000-00-00">
+          <span class="span-form-check"></span>
+        </section>
+
+        <section class="form-group">
+          <label class="field-label">Електронна адреса *</label>
+          <input type="email" name="email" id="email" value="" class="form-control" placeholder="Електронна адреса">
+          <span class="span-form-check"></span>
+        </section>
+      </section>
+
+      <section class="section-delivery">
+        <h2>Доставка</h2>
+
+        <section class="form-group radio">
+          <label><input type="radio" name="delivery" value="shipment" id="shipment" checked> Заберу сам - 0 грн.</label>
+          <br/>
+          <label><input type="radio" name="delivery" value="delivery" id="delivery"> Нова пошта - 35 грн.</label><br/>
+        </section>
+
+        <section class="form-group" id="section-city" hidden></section>
+        <section class="form-group" id="section-department" hidden></section>
+
+      </section>
+
+      <section class="form-group checkbox">
+        <label>
+          <input name="check-license" value="check-license" type="checkbox" id="agree"> Я приймаю умови ліцензійної
+          згоди *
+        </label>
+        <span class="span-form-check" id="license"></span>
+      </section>
+      <br/>
+
+      <button type="submit" value="submit" name="submit" id="submit" class="btn btn-default">Оформити</button>
+    </form>
+  </section>
+
+  <div class="tip" id="tipp" hidden>tip</div>
+
+</section>
+
+<script src="js/loader.js"></script>
+<script src="js/tooltip.js"></script>
+<script src="js/Buyer.js"></script>
+<script src="js/Cart.js"></script>
+<script src="js/City.js"></script>
+<script src="js/Delivery.js"></script>
+<script src="js/Department.js"></script>
+<script src="js/NewPost.js"></script>
+<script src="js/Painter.js"></script>
+<script src="js/Product.js"></script>
+
+<script src="js/checkout.js"></script>
+<script src="js/formValidation.js"></script>
+
+
+</body>
+</html>

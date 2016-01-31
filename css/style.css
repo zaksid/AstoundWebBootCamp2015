@@ -1,0 +1,122 @@
+body {
+    padding: 1% 2%;
+    font-family: "Open Sans", "Verdana", sans-serif;
+    font-size: 0.9em;
+    background-color: #AED581;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: white;
+    padding: 2% 5%;
+}
+
+h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #808080;
+}
+
+h2 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, tr, th, td {
+    border: 1px none #AED581;
+}
+
+th, td {
+    font-size: 1em;
+    padding: 5px 20px;
+    border-top: 1px solid #AED581;
+}
+
+tr:last-child {
+    font-weight: bold;
+    text-align: right;
+    background-color: #AED581;
+}
+
+th {
+    text-align: center;
+    background-color: #AED581;
+}
+
+.count {
+    width: 70px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+    height: 2em;
+    width: 14em;
+    border: 1px solid #808080;
+    border-radius: 2px;
+}
+
+button {
+    background-color: #558B2F;
+    border: none;
+    color: #ffffff;
+    font-size: 1.3em;
+    padding: 0.5% 4%;
+    border-radius: 3px;
+    margin: 10px 20px;
+    cursor: pointer;
+}
+
+.product-pic {
+    width: 100px;
+}
+
+.form-group {
+    margin-bottom: 1px;
+}
+
+.field-label {
+    font-size: 1em;
+    font-weight: normal;
+    display: inline-block;
+    width: 11em;
+    text-align: right;
+    margin-right: 15px;
+}
+
+.section-delivery {
+    padding: 20px 0;
+}
+
+.section-delivery .field-label {
+    width: 7em;
+}
+
+.span-form-check {
+    display: inline-block;
+    color: #F44336;
+}
+
+.form-control.invalid {
+    border: 1px solid #F44336;
+}
+
+.tip {
+    background-color: #FFE082;
+    padding: 10px 25px;
+    position: absolute;
+    left: 50px;
+    top: 100px;
+    border-radius: 3px;
+}
+
+.wrapper {
+    width: auto;
+    height: auto;
+    cursor: help;
+}
